@@ -41,8 +41,10 @@ section {
     font-weight: 300;
     list-style: none ;
 
-    height: 30px;
-    
+    height: 32px;
+    position: fixed;
+    width: 100%;
+    top: -1%;
     
     color: rgb(93, 214, 174);
     font-size: 16px;
@@ -54,19 +56,21 @@ section {
     padding-top: 1rem;
 
     background-color: rgba(0, 0, 0, 0.555);
+    background: linear-gradient(rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.562));
     
 }
 
 .menu #aa {
     
     font-family: 'Chakra Petch', sans-serif;    
-    display: flex;
+    display: block;
     gap: 3rem;
     font-weight: 300;
     cursor: pointer;
 
     color: rgb(93, 214, 174);
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -109,13 +113,16 @@ sobre
     margin-bottom: -210px;
     height: 100vh;;
     width: 100%;
-   
-    background: linear-gradient ( rgba(0, 0, 0, 0.644)
-     rgba(0, 0, 0, 0.219))  ;
+
 }
 
+.sobre  {
+    background-color: rgb(1, 29, 20) ;
+    
+}
 
 .sobre .seção h2 {
+    padding-top: 40px;
     font-size: 30px;
     font-family: 'Chakra Petch', sans-serif;   
     color: aquamarine;
@@ -202,9 +209,11 @@ sobre
 
 /* habilidades*/
 .habi {
-    background-color: rgb(6, 39, 28);
+    background-color: rgb(4, 95, 50);
     color: aquamarine;
     padding: 50px 20px;
+    
+    
     
 }
 .habi .Shabi {
@@ -235,16 +244,18 @@ sobre
 }
 
 .HB div {
-    color: #3ee4ba;
-    font-size: 20px;
+    width: 120px;
+    padding: 50px 30px ;
+    height: 70px;
+    border: solid 2px #02362c;
+    border-radius: 20%;
+    text-align: center;
+    margin: 1rem;
+
     display: inline-block;
-    width: 100px;
-     height: 70px;
-     padding: 35px 20px;
-     border: 2px solid;
-     border-radius: 20%;
-     text-align: center;
-     margin: 1rem;
+
+    background-color: #5cddc3;
+    background: linear-gradient( rgba(87, 230, 149, 0.753), rgba(0, 0, 0, 0.253) );
 
   
 }
@@ -263,23 +274,25 @@ sobre
 }
 
 .Compe div { 
-    color: #3ee4ba;
- font-size: 20px;
- display: inline-block;
- width: 100px;
-  height: 70px;
-  padding: 35px 20px;
-  border: 2px solid;
-  border-radius: 20%;
-  text-align: center;
-  margin: 1rem;
+    width: 120px;
+    padding: 50px 30px ;
+    height: 70px;
+    border: solid 2px #02362c;
+    border-radius: 20%;
+    text-align: center;
+    margin: 1rem;
+
+    display: inline-block;
+
+    background-color: #5cddc3;
+    background: linear-gradient( rgba(87, 230, 149, 0.753), rgba(0, 0, 0, 0.253) );
  
 }
 
 /* projetos*/
 
 .sec4 {
-    background-color: #0c662a;
+    background-color: rgb(6, 39, 28) ;
     color: #fff;
     padding: 50px 20px;
 }
@@ -288,4 +301,30 @@ sobre
 
         max-width: 1100px;
         margin: auto;
+}
+
+.sec4 .proj .Pproj h2{
+    color: #3ee4ba;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sec4 .proj .Pproj div{
+    width: 120px;
+    padding: 50px 30px ;
+    height: 70px;
+    border: solid 2px #02362c;
+    border-radius: 20%;
+    text-align: center;
+    margin: 1rem;
+
+    display: inline-block;
+
+    background-color: #02362c;
+    background: linear-gradient( rgba(1, 41, 18, 0.753), rgba(0, 0, 0, 0.253) );
+}
+
+.sec4 .proj .Pproj div span {
+    color: #5cddc3;
+    font-size: 18px;
 }
